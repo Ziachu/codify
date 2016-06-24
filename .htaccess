@@ -1,0 +1,10 @@
+Options -Indexes +FollowSymLinks
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/codify/$
+RewriteRule (.*) /codify/page [R=301,NC,L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /codify/index.php?path=$1 [NC,L,QSA]

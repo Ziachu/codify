@@ -1,0 +1,21 @@
+- można stworzyć konto (imię (unikatowe), hasło)
+- każde konto ma swoją tablicę
+- na tablicy czyjejś można pisać
+- na czyjejś tablicy można wpisać komuś kod
+- kod będzie interpretowany tylko w jakimś odizolowanym środowisku (w polu na tablicy) - nie będzie mógł niczego zniszczyć w bazie, ani wypływać na żadne elementy serwisu (może iframe)
+
+# strony dostępne bez konta
+- strona startowa
+  - logowanie/rejestracja
+
+# strony niedostępne bez konta
+- strona główna:
+  - lista użytkowników
+  - odnośnik do własnego profilu
+  - możliwość wylogowania (przekierowanie do strony startowej)
+
+- strona profilu użytkownika:
+  - na górze nick
+  - lista wpisów na tablicy
+  - każdy wpis to nick autora (odnośnik do jego profilu) i treść wpisu
+  - jeżeli to mój profil to możliwość wylogowania, jeżeli nie, to link do własnego profilu
