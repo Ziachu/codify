@@ -40,11 +40,17 @@ if (isset($_GET['path'])) {
 				require('pages/profilepage.php');
 				break;
 			case 'removepost':
-				// echo 'kurwa';
 				if (chck()) {
 					require ('./pages/removepost.php');
 				}
 				break;
+			case 'upload':
+				if (chck()) {
+					require('./pages/upload.php');
+				}
+
+				break;
+
 			default:
 				if (chck()) {
 					$users = $mc->get_registered_users();

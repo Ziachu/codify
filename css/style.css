@@ -102,3 +102,7 @@ hr {
 .modal header.success {
 	background-color: rgba(100, 200, 100, 0.9);
 }
+
+.image {
+	width: 100px;
+}

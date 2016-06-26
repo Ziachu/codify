@@ -44,6 +44,19 @@
 					$this->c->decr($key);
 			}
 		}
+
+		public function sadd($key, $val) {
+			$this->c->sAdd($key, $val);
+		}
+
+		public function smembers($key) {
+			return $this->c->sMembers($key);
+		}
+
+		public function srem($key, $val) {
+			$this->c->sRem($key, $val);
+		}
+
 	}
 
 	$rd = new RedisClient();

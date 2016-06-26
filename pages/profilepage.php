@@ -81,7 +81,7 @@
 								<a href="/codify/profile/' . $author_name . '" class="button no-margin">' . $author_name . '</a>
 							</h1>
 						</header>
-						<footer>' . $post['post_content'] . '</footer>';
+						<footer><code>' . htmlspecialchars($post['post_content']) . '</code></footer>';
 
 			if ($author_name == $_SESSION['user_name'])
 				echo '<footer><button id="remove" data-post-id="' . $post['post_id'] . '" class="button warning right">delete</button></footer>';

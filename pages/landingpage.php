@@ -18,9 +18,11 @@
 	</div>
 
 	<?php	if (chck()) { ?>
-		<div class="card">
+	<div class="flex one center full">
+		
+		<div class="card third">
 			<header>
-				<h1 class="center">registered users</h1>
+				already registered users
 			</header>
 			<footer>
 				<ul>
@@ -30,5 +32,49 @@
 				</ul>
 			</footer>
 		</div>
+
+		<div class="card off-sixth third">
+			<header>
+				add photo (only .jpeg, don't ask why...)
+			</header>
+			<footer>
+				<form action="upload" method="post" enctype="multipart/form-data">
+					<label class="dropimage">
+					  <input title="Drop image or click me" type="file" name="fileToUpload">
+					</label>
+					<input type="submit" value="upload" name="submit" class="right">
+				</form>
+			</footer>
+		</div>
+
+		<div class="card four-fifth">
+			<header>
+				images already uploaded
+			</header>
+			<div>
+				<?php
+					if ($rd->smembers('volatile_images')) {
+						foreach ($rd->smembers('volatile_images') as $volatile_image) {
+							echo '<img src="' . $volatile_image . '">';
+						}
+					}
+				?>
+			</div>
+		</div>
+
+		<div class="card four-fifth">
+			<header>
+				images in queue
+			</header>
+			<div>
+				<?php
+					if ($rd->smembers('images_in_queue')) {
+						foreach ($rd->smembers('images_in_queue') as $image_in_queue) {
+							echo '<img class="image" src="/codify/' . $image_in_queue . '"></div>';
+						}
+					}
+				?>
+		</div>
+	</div>
 	<?php	}	?>
 <?php endblock() ?>

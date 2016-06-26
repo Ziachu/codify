@@ -1,7 +1,7 @@
 <?php
 	class Database {
 
-		private $c;
+		public $c;
 
 		public function __construct() {
 			$this->c = new mysqli("localhost", "codify_admin", "asdasd", "codify");
