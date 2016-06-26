@@ -1,0 +1,108 @@
+{
+	"users": [{
+		"user_id": 1,
+		"user_name": "Michał",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 2,
+		"user_name": "Marta",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 3,
+		"user_name": "Robert",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 4,
+		"user_name": "Damian",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 5,
+		"user_name": "Jakub",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 6,
+		"user_name": "Monika",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}, {
+		"user_id": 7,
+		"user_name": "Konrad",
+		"user_passwordhash": "$2y$10$lwKqmcqkqUZxvQBHL3sw7.SpVgibUeJVxClhjFeCUhUXpARt3ZEdO"
+	}],
+
+	"posts": [{
+		"post_id": 1,
+		"post_author_id": 1,
+		"post_addressee_id": 2,
+		"post_content": "<?php if (works) echo 'awesome!'; else echo 'damn it...'; ?>"
+	}, {
+		"post_id": 2,
+		"post_author_id": 1,
+		"post_addressee_id": 3,
+		"post_content": "?"
+	}, {
+		"post_id": 3,
+		"post_author_id": 1,
+		"post_addressee_id": 2,
+		"post_content": "println \"Hello World!\""
+	}, {
+		"post_id": 4,
+		"post_author_id": 2,
+		"post_addressee_id": 1,
+		"post_content": "PUT (\"Hello, Ward\"); end HELLO_WARD;"
+	}, {
+		"post_id": 5,
+		"post_author_id": 2,
+		"post_addressee_id": 4,
+		"post_content": "begin file rmt(kind = remote); write(rmt, < \"Hello World!\">); end."
+	}, {
+		"post_id": 6,
+		"post_author_id": 2,
+		"post_addressee_id": 7,
+		"post_content": "<?php echo \"Hello World!\" ?>"
+	}, {
+		"post_id": 7,
+		"post_author_id": 2,
+		"post_addressee_id": 4,
+		"post_content": "import std.c.stdio; int main(char[][] args) { printf(\"Hello, World!\n\");return 0}"
+	}, {
+		"post_id": 8,
+		"post_author_id": 3,
+		"post_addressee_id": 1,
+		"post_content": "##X#"
+	}, {
+		"post_id": 9,
+		"post_author_id": 4,
+		"post_addressee_id": 2,
+		"post_content": "[ Main; print\" Hello World! ^ \";];"
+	}, {
+		"post_id": 10,
+		"post_author_id": 5,
+		"post_addressee_id": 7,
+		"post_content": " public class Hello { public static void main(String[] args) { System.out.println(\"Hello World\"); }}"
+	}, {
+		"post_id": 11,
+		"post_author_id": 6,
+		"post_addressee_id": 1,
+		"post_content": " @Prompt([Ok];\"\";\"Hello World\")"
+	}, {
+		"post_id": 12,
+		"post_author_id": 6,
+		"post_addressee_id": 2,
+		"post_content": "MODULE Hello EXPORTS Main; IMPORT Stdio, Wr; BEGIN Wr.PutText ? (Stdio.stdout, \"Hello World\"); END Hello."
+	}, {
+		"post_id": 13,
+		"post_author_id": 7,
+		"post_addressee_id": 6,
+		"post_content": "#import <Foundation/Foundation.h> @interface Greeter: NSObject {} - greet; @end @implementation Greeter - greet { NSLog(@\" Hello, World!\");} @end int main(int argc, char * argv[]) { Greeter * gr = [Greeter new]; [gr greet]; [gr release];return 0;} "
+	}, {
+		"post_id": 14,
+		"post_author_id": 6,
+		"post_addressee_id": 7,
+		"post_content": "\"Hello World\""
+	}, {
+		"post_id": 15,
+		"post_author_id": 4,
+		"post_addressee_id": 3,
+		"post_content": "FQSYSPRT OPRINTER OFLIND(*IN88) D * C EXFMT RECFMT C EVAL * INLR = * ON O RECFMT R O 11 'HELLO WORLD'"
+	}]
+}
