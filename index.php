@@ -9,12 +9,12 @@
 	require_once('./core/memcached.php');
 	require_once('./core/logic.php');
 
-	$sql = 'SELECT * FROM posts
-			 WHERE post_addressee_id = ' . '1';
-	$key = 'SQL:' . '1' . ':' . crc32($sql);
-	$mc->c->delete($key);
+	// $sql = 'SELECT * FROM posts
+	// 		 WHERE post_addressee_id = ' . '1';
+	// $key = 'SQL:' . '1' . ':' . crc32($sql);
+	// $mc->c->delete($key);
 	
-if (isset($_GET['path']))
+if (isset($_GET['path'])) {
 		$path = $_GET['path'];
 		// echo $path;
 
@@ -53,5 +53,6 @@ if (isset($_GET['path']))
 				require('./pages/landingpage.php');
 				break;
 		}
+	}
 
 ?>

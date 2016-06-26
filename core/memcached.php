@@ -14,16 +14,20 @@
 			$sql = 'SELECT * FROM posts
 						 WHERE post_addressee_id = ' . $user_id;
 			$key = 'SQL:' . $user_id . ':' . crc32($sql);
-
 			$res = $this->c->get($key);
+
+			// var_dump($res);
+
 			if (!$res) {
 				//key doesn't exist in memcache
+				echo '<span style="color: red">database</span> used<br>';
 				$val = $db->get_posts_on_user_wall($user_id);
-				$this->c->set($key, $val, 1);
+				$this->c->set($key, $val, 3);
 				return $val;
 
 			} else {
 				//key already exists in memcache
+				echo '<span style="color: green">memcached</span> used';
 				return $res;
 			}
 		}
